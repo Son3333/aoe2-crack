@@ -1,0 +1,125 @@
+;*Cough*
+;It's not Zanzard's Ai that Zyx is using any more, is it?:P
+;This is just done to fix the half-built palisade cheating.
+
+;Edit by zyx: Dave, you spelled it wrong. It's Zanthard. :p
+
+(defrule
+	(true)
+=>
+	(set-strategic-number sn-maximum-town-size 10)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size <= 10)
+=>
+	(set-strategic-number sn-maximum-town-size 20)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 10)
+	(strategic-number sn-maximum-town-size <= 20)
+=>
+	(set-strategic-number sn-maximum-town-size 30)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 20)
+	(strategic-number sn-maximum-town-size <= 30)
+=>
+	(set-strategic-number sn-maximum-town-size 40)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 30)
+	(strategic-number sn-maximum-town-size <= 40)
+=>
+	(set-strategic-number sn-maximum-town-size 50)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 40)
+	(strategic-number sn-maximum-town-size <= 50)
+=>
+	(set-strategic-number sn-maximum-town-size 60)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 50)
+	(strategic-number sn-maximum-town-size <= 60)
+=>
+	(set-strategic-number sn-maximum-town-size 70)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 60)
+	(strategic-number sn-maximum-town-size <= 70)
+=>
+	(set-strategic-number sn-maximum-town-size 80)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 70)
+	(strategic-number sn-maximum-town-size <= 80)
+=>
+	(set-strategic-number sn-maximum-town-size 90)
+)
+
+(defrule
+	(not (enemy-buildings-in-town))
+	(strategic-number sn-maximum-town-size > 80)
+	(strategic-number sn-maximum-town-size <= 90)
+=>
+	(set-strategic-number sn-maximum-town-size 100)
+)
+
+(defrule 
+	(enemy-buildings-in-town)
+=>
+	(set-strategic-number sn-maximum-town-size 10)
+)
+
+;Now for "Zani's" stuff.:P
+(defrule	;this rule has FACTS and ACTIONS to keep VILLAGERS still
+	(true)
+=>
+	(set-strategic-number sn-maximum-food-drop-distance 0)
+	(set-strategic-number sn-maximum-wood-drop-distance 0)
+	(set-strategic-number sn-maximum-gold-drop-distance 0)
+	(set-strategic-number sn-maximum-hunt-drop-distance 0)
+	(set-strategic-number sn-maximum-stone-drop-distance 0)
+	(set-strategic-number sn-food-gatherer-percentage 0)
+	(set-strategic-number sn-wood-gatherer-percentage 0)
+	(set-strategic-number sn-gold-gatherer-percentage 0)
+	(set-strategic-number sn-stone-gatherer-percentage 0)
+	(set-strategic-number sn-cap-civilian-explorers 0)
+	(set-strategic-number sn-percent-civilian-explorers 0) 
+	(disable-self)
+)
+(defrule	;this rule has FACTS and ACTIONS to keep TROOPS still
+	(true)
+=>
+	(set-strategic-number sn-percent-enemy-sighted-response 100)
+	(set-strategic-number sn-hits-before-alliance-change 25)
+	(set-strategic-number sn-number-explore-groups 0)
+	(set-strategic-number sn-percent-attack-soldiers 0)
+	(set-strategic-number sn-task-ungrouped-soldiers 0)
+	(set-strategic-number sn-number-attack-groups 0)
+	(set-strategic-number sn-enemy-sighted-response-distance 10)
+	(set-strategic-number sn-total-number-explorers 0)
+	(set-strategic-number sn-relic-return-distance 0)
+	(disable-self)
+)
+;REMEMBER NOT TO CHANGE THESE RULES EVER!
+;Only dare to do so after you feel you truly master AI scripting.
+
+;Edit by zyx: Dang you, Dave. I had no idea that
+;all you need to do was increase the town size. :p

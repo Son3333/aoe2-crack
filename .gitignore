@@ -1,0 +1,16 @@
+# Archives exceeding GitHub 100MB limit
+*.rar
+*.zip
+
+# Temporary logs & caches
+*.log
+*.tmp
+*.bak
+
+# Admin Key Generator & Source (Private tools - DO NOT PUSH)
+Tao_Key_Kich_Hoat.*
+Tao_Key_Kich_Hoat*
+launch_aoe2_src.ps1
+
+
+

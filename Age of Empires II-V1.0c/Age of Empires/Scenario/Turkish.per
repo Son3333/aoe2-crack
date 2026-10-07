@@ -1,0 +1,57 @@
+(defrule
+       (game-time > 750)
+       =>
+       (set-strategic-number sn-percent-attack-soldiers 25)
+       (chat-to-all "Find Prince Dracula and destroy him!")
+       (disable-self)  
+)
+
+
+(defrule
+       (game-time > 1800)
+       =>
+       (set-strategic-number sn-percent-attack-soldiers 50)
+       (chat-to-all "Destroy Dracula at all costs!")
+       (disable-self)
+) 
+
+(defrule
+        (game-time > 750)
+        (can-train long-swordsman)
+        =>
+        (train long-swordsman)
+)
+
+(defrule 
+       (game-time > 900)
+       (can-train crossbowman)
+       =>
+       (train crossbowman)
+)
+
+(defrule
+       (game-time > 1000)
+       (can-train light-cavalry)
+       =>
+       (train light-cavalry)
+)
+
+(defrule
+       (game-time > 1200)
+       (can-train janissary)
+       =>
+       (train janissary)
+)
+
+(defrule
+       (game-time > 1800)
+       (can-train bombard-cannon)
+       =>
+       (train bombard-cannon)
+)
+
+(defrule
+       (unit-type-count-total villager < 16)
+       =>
+       (train villager)
+)
