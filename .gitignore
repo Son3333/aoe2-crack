@@ -11,6 +11,7 @@
 Tao_Key_Kich_Hoat.*
 Tao_Key_Kich_Hoat*
 launch_aoe2_src.ps1
+cloudflare_worker.js
 
 # Savegame, player profiles, screenshots
 *.gax
