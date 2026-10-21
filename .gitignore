@@ -12,5 +12,18 @@ Tao_Key_Kich_Hoat.*
 Tao_Key_Kich_Hoat*
 launch_aoe2_src.ps1
 
+# Savegame, player profiles, screenshots
+*.gax
+*.nfp
+*.BMP
+*.bmp
+Age of Empires II-V1.0c/Age of Empires/SaveGame/
+Age of Empires II-V1.0c/Age of Empires/Screenshots/
+Age of Empires II-V1.0c/Age of Empires/Campaign/Media/cam4.bln
+Age of Empires II-V1.0c/Age of Empires/game/campaign/Media/cam4.bln
 
+# Unrelated project folders placed in downloads
+robot_hut_bui_esp32/
+web phim cc/
 
+HUONG_DAN_CHOI_ONLINE.txt
