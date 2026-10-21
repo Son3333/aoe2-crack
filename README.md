@@ -35,6 +35,21 @@ Khi đang ở trong trận đấu, bạn có thể bấm trực tiếp các phí
 
 ---
 
+---
+
+## 🗺️ Bản Chuyên Dụng Đánh LAN / Online: `Choi_AOE2_HackMap.bat` (Hack Map Chuẩn Liên Quân - 100% Không Bao Giờ Văng)
+
+Dành riêng cho các trận đấu mạng LAN / Online với bạn bè khi bạn chỉ muốn **Hack Map thuần túy (Client-Side)** để soi bản đồ và đối thủ mà không làm ảnh hưởng đến mô phỏng trận đấu:
+
+* **Cách khởi động:** Chạy trực tiếp file **`Choi_AOE2_HackMap.bat`**.
+* **Tính năng:**
+  * **Tự động mở sáng 100% toàn bộ bản đồ & tắt sương mù đen (Marco + Polo):** Nhìn thấy rõ mồn một từng con nông dân, bước đi di chuyển, nhà cửa và bãi tài nguyên của đối thủ từ giây đầu tiên (như Hack Map Liên Quân Mobile).
+  * **Tự động soi tài nguyên thời gian thực (F4 HUD):** Hiện rõ số lượng [T:Thịt G:Gỗ V:Vàng D:Đá] của từng người chơi cạnh tên của họ.
+  * **Phím `[ 1 ]`:** Bấm để làm mới / mở sáng lại bản đồ tức thì bất cứ lúc nào.
+* **Đặc tính an toàn tuyệt đối:**
+  * **100% Client-Side:** Chỉ mở hiển thị sương mù cục bộ trên màn hình máy của bạn, gửi `0 byte` gói tin mạng ra ngoài.
+  * **Triệt tiêu 100% Out of Sync & Crash:** Bạn bè hoặc đối thủ chơi bản gốc hay bất kỳ bản mod nào cũng không hề hay biết và game **vĩnh viễn không bao giờ bị văng (crash)**!
+
 ## 📊 Hiển Thị Trực Tiếp Tài Nguyên Của Địch (Real-Time Resource HUD)
 
 Ngay khi vào trận, bảng điểm góc dưới bên phải màn hình (`F4`) được tự động bật sẵn và nâng cấp trong RAM để hiển thị **trực tiếp theo thời gian thực** toàn bộ tài nguyên của từng người chơi/đối thủ ngay cạnh tên của họ:
